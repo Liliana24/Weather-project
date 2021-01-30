@@ -12,14 +12,14 @@
 }
 #degree {
   position: relative;
-  font-size: 180px;
+  font-size: 175px;
   margin-top: -8%;
 }
 #current-location {
   height: 37px;
   position: fixed;
   margin-top: 0;
-  margin-left: 5%;
+  margin-left: 0%;
 }
 h1 {
   color: rgb(18, 91, 160);
@@ -34,24 +34,31 @@ h1 {
   position: relative;
   font-size: 20px;
   text-decoration: none;
-  top: 10%;
-  left: 11%;
+  top: 19%;
+  left: 9%;
 }
 .temperatures {
   font-size: 20px;
+  position: relative;
+  left: 3%;
 }
 .days {
   font-size: 20px;
 }
 span.weather_info {
   position: fixed;
-  left: 65%;
-  top: 20%;
-  line-height: 1;
+  font-size: 19px;
+  left: 55%;
+  top: 30%;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 1.5;
 }
 .icon {
-  font-size: 150px;
-  margin-top: -26%;
+  font-size: 130px;
+  margin-top: -23%;
   margin-left: 16%;
 }
 
@@ -60,4 +67,6 @@ span.weather_info {
 }
 .footer {
   text-align: center;
+  font-family: PT Mono;
+  font-size: 13px;
 }
