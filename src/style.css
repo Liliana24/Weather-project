@@ -58,3 +58,6 @@ span.weather_info {
 .five-days-tenperature {
   position: relative;
 }
+.footer {
+  text-align: center;
+}
