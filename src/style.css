@@ -3,11 +3,11 @@
 }
 #border {
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-  width: 80%;
+  max-width: 60%;
   max-height: 10%;
   border-radius: 1%;
 }
-#Search_city {
+#search_city {
   width: 60%;
 }
 #degree {
@@ -18,11 +18,16 @@
 #current-location {
   height: 37px;
   position: fixed;
+  float: right;
 }
 h1 {
   color: rgb(18, 91, 160);
   font-size: 60px;
   margin-top: -1%;
+}
+h4 {
+  margin: 0;
+  padding: 0;
 }
 .icons {
   font-size: 70px;

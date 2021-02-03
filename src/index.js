@@ -27,28 +27,4 @@ function formatDate(date) {
   let currentTime = new Date();
   dateElement.innerHTML = formatDate(currentTime);
   
-  function showTemperature(response) {
-    console.log(response.data.name);
-    document.querySelector("h1").innerHTML = response.data.name;
-    document.querySelector("#degree").innerHTML = Math.round(
-      response.data.main.temp
-    );
-  }
-  
-  function submitForm(event) {
-    event.preventDefault();
-    let apiKey = "955d3ec2ddb7dbaebd9db1a9e829cd75";
-    let units = "metric";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-    axios.get(apiUrl).then(showTemperature);
-  }
-  
-  let form = document.querySelector("form");
-  form.addEventListener("click", submitForm);
-  
-  function handleSubmit(event) {
-    event.preventDefault();
-    let city = document.querySelector("#city-input").value;
-    searchCity(city);
-  }
-  
+ let apiKey = "61568445203fe59583ad84f212ca0045";
