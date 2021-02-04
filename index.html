@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe to HTML/CSS</title>
+    <title>Weather App</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
       rel="stylesheet"
@@ -31,6 +31,7 @@
             class="form-control"
             id="city-input"
             placeholder="Search City"
+            autocomplete="off"
           />
         </div>
         <div class="col-auto">
@@ -55,11 +56,15 @@
           </span>
           <span class="degree"><h1 id="degree">2</h1></span>
 
-          <span class="icon"><i class="far fa-sun"></i></span>
+          <span class="icon"><img 
+            src ="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+            alt=""
+            id="icon"
+            />
+          </span>
 
           <span class="weather_info">
             <ul>
-        
             <li>Wind: <span id="wind"></span> km/h</li> 
             <li>Humidity: <span id="humidity"></span></li>   
           </ul>

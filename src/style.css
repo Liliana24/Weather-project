@@ -8,7 +8,7 @@
   border-radius: 1%;
 }
 #search_city {
-  width: 70%;
+  width: 60%;
 }
 #degree {
   position: relative;
@@ -37,8 +37,8 @@ h4 {
   position: relative;
   font-size: 20px;
   text-decoration: none;
-  top: 19%;
-  left: 9%;
+  top: 23%;
+  left: 18%;
 }
 .temperatures {
   font-size: 20px;
