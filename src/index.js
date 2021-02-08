@@ -83,8 +83,8 @@ function displayForecast(response) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
     
-    <div class="row">
-      <div class="col-2">
+    
+      <div class="col-sm">
        <p id="hours">
        ${formatHours(forecast.dt * 1000)}
        </p>
@@ -98,9 +98,6 @@ function displayForecast(response) {
            ${Math.round(forecast.main.temp_min)}°
         </div>
       </div>
-    </div>
-
-
 `;
 }
 }
