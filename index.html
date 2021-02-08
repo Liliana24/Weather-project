@@ -25,96 +25,51 @@
   <body>
     <div class="container" id="border">
       <form class="row g-3" id="search_city">
-        <div class="col-auto">
-          <input
-            type="text"
-            class="form-control"
-            id="city-input"
-            placeholder="Search City"
-            autocomplete="off"
-          />
-        </div>
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary mb-3">Search</button>
-          <button
-            type="button"
-            class="btn btn-secondary btn-sm"
-            id="current-location"
-          >
-            Current Location
-          </button>
+        <div class="mb-3">
+         
+          <input type="text" class="form-control" id="city-input" placeholder="Search City" autocomplete="off">
+           <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Search</button>
+          </div>
         </div>
       </form>
 
       <h1 id="city">London</h1>
       <h4>Friday 2.56pm</h4>
-
-      <div class="container">
-        <div class="row">
-          <span class="units">
-            <p>°C</p> 
-          </span>
-          <span class="degree"><h1 id="degree">2</h1></span>
-
-          <span class="icon"><img 
-            src ="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
-            alt=""
-            id="icon"
-            />
-          </span>
-
-          <span class="weather_info">
-            <ul>
-            <li>Wind: <span id="wind"></span> km/h</li> 
-            <li>Humidity: <span id="humidity"></span></li>   
-          </ul>
-          </span>
-        </div>
-      </div>
-
-      <div class="five-days-temperature">
-        <div class="container">
-          <div class="days">
-            <div class="row row-cols-5">
-              <div class="col">Saturday</div>
-              <div class="col">Sunday</div>
-              <div class="col">Monday</div>
-              <div class="col">Tuesday</div>
-              <div class="col">Wednesday</div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="icons">
-            <div class="row row-cols-5">
-              <div class="col">
-                <i class="fas fa-cloud-showers-heavy cloud-shower-icon"></i>
-              </div>
-              <div class="col"><i class="fas fa-cloud-showers-heavy"></i></div>
-              <div class="col"><i class="fas fa-cloud-sun"></i></div>
-              <div class="col"><i class="fas fa-cloud-sun"></i></div>
-              <div class="col"><i class="far fa-sun"></i></div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="temperatures">
-            <div class="row row-cols-5">
-              <div class="col">2°C</div>
-              <div class="col">2°C</div>
-              <div class="col">1°C</div>
-              <div class="col">1°C</div>
-              <div class="col">3°C</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h5 id="description">Clear</h5>
       
+      <br/>
+        
+          <div class="row row-cols-6">
+            <div class="col"><span class="icon"><img 
+              src ="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+              alt=""
+              id="icon"
+              />
+            </span>
+          </div>
+            <div class="float-left">
+              <strong id="degree"></strong>
+            <span class="units">°C</span>
+          </div>
+            <div class="col-6"><span class="weather_info">
+              <ul>
+              <li>Wind: <span id="wind"></span> km/h</li> 
+              <li>Humidity: <span id="humidity"></span></li>   
+            </ul>
+            </span>
+          </div>
+          </div>
+          
+       <br/>
+
+      <div class="five-days-temperature" id="forecast">
+      </div>
+       
     </div>
     <br/>
-   
-    
   <footer class="footer">This website was created by <a href="mailto:tatianapariente@yahoo.fr">Tatiana Pariente</a> and is <a href="https://github.com/Liliana24/Weather-project">open-sourced on Github</a> and hosted on Netlify</footer>
   <script src="src/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>

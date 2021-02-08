@@ -1,57 +1,52 @@
-.container {
-  font-family: "Karla", sans-serif;
+body {
+  background: #ffdcdc;
 }
 #border {
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-  max-width: 80%;
-  max-height: 10%;
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+  font-family: "Karla", sans-serif;
+  max-width: 65%;
+
   border-radius: 1%;
 }
-#search_city {
-  width: 60%;
+
+#city-input {
+  width: 80%;
 }
+
 #degree {
-  position: relative;
-  font-size: 175px;
-  margin-top: -8%;
-}
-#current-location {
-  height: 37px;
   position: fixed;
-  float: right;
-}
-h1 {
-  color: rgb(18, 91, 160);
-  font-size: 60px;
-  margin-top: -1%;
-}
-h4 {
-  margin: 0;
+  font-size: 140px;
+  margin-top: -3%;
+  margin-left: -5%;
   padding: 0;
 }
-.icons {
-  font-size: 70px;
-  position: relative;
+
+h1 {
+  color: #9f5f80;
+  font-size: 55px;
+  margin-top: -4%;
 }
+h4 {
+  margin-top: -2%;
+  padding: 0;
+}
+#description {
+  margin-top: -1%;
+  text-transform: capitalize;
+}
+
 .units {
-  position: relative;
+  position: fixed;
   font-size: 20px;
   text-decoration: none;
-  top: 23%;
-  left: 18%;
+  top: 27%;
+  left: 33%;
 }
-.temperatures {
-  font-size: 20px;
-  position: relative;
-  left: 3%;
-}
-.days {
-  font-size: 20px;
-}
+
 span.weather_info {
   position: fixed;
   font-size: 19px;
-  left: 55%;
+  right: 25%;
   top: 30%;
 }
 
@@ -60,16 +55,33 @@ ul {
   line-height: 1.5;
 }
 .icon {
-  font-size: 130px;
-  margin-top: -23%;
-  margin-left: 16%;
+  display: block;
+  size: 40px;
+  margin-top: 30%;
+  margin-bottom: 2%;
+  margin-left: -19%;
 }
 
 .five-days-tenperature {
+  position: relative;
+}
+#hours {
+  position: relative;
+}
+#icon-five-days {
+  position: relative;
+}
+.temperatures {
+  font-size: 20px;
   position: relative;
 }
 .footer {
   text-align: center;
   font-family: PT Mono;
   font-size: 13px;
+}
+button {
+  display: block;
+  margin-top: -7%;
+  margin-left: 80%;
 }
