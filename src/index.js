@@ -84,11 +84,11 @@ function displayForecast(response) {
     forecastElement.innerHTML += `
     
     
-      <div class="col-sm">
+      <div class="col">
        <p id="hours">
        ${formatHours(forecast.dt * 1000)}
        </p>
-       <img 
+       <img id="icons"
        src ="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
        />
         <div class="temperatures">
